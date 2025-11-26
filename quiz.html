@@ -1,0 +1,64 @@
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WorkFinder | Quiz</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <header class="sticky">
+        <div class="container nav">
+            <a class="brand" href="home.html"><span class="brand-badge">WF</span>WorkFinder</a>
+            <a class="btn" href="detail.html">← 상세로</a>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <h2 style="margin:10px 0 6px;color:#0f172a">실무형 상황 문제 (주관식)</h2>
+        <p style="color:var(--muted);margin:0 0 18px">아래는 실제 업무 시나리오를 단순화한 과제들입니다. 각 문항에 대해 설계/의사결정을 서술하세요.</p>
+
+
+        <!-- 상황 1: 기능 추가 설계 -->
+        <section class="panel">
+            <div class="badge">상황 1 · home 페이지에 뉴스 탭 추가</div>
+            <h3 class="q">home 페이지에 뉴스 탭을 추가하고 버튼을 누르면 뉴스 탭으로 이동하도록 수정해야합니다.</h3>
+            <ul style="margin:6px 0 12px 18px;color:#374151">
+                <li>요구사항: nav 바에 뉴스 탭 추가, 뉴스 페이지로 라우팅</li>
+                <li>질문: home 페이지에 뉴스 탭을 추가하고 버튼을 누르면 뉴스 탭으로 이동하도록 수정하세요.</li>
+            </ul>
+            <textarea class="answer" placeholder="예: ../components/nav 파일에 <button>뉴스</button> 추가
+    및 라우팅 링크 추가"></textarea>
+        </section>
+
+
+
+        <!-- 제출 후 피드백(모의 화면) -->
+        <section class="panel">
+            <div class="badge">제출 후 · 피드백 예시</div>
+            <div class="feedback-grid" style="margin-top:10px">
+                <div class="card">
+                    <h4 style="margin:0 0 8px;color:#0f172a">분석 결과</h4>
+                    <p style="margin:0 0 10px; color:#374151">버튼 태그를 추가한 것은 맞지만 라우팅 링크가 추가되어있지 않아 뉴스 버튼을 클릭했을 때 뉴스 탭으로
+                        이동할 수 없는 상태입니다. 라우팅 링크를 추가해보세요.</p>
+                    <div>
+                        <img src="assets/그래프.jpg" width="500px">
+                    </div>
+                    <div style="display:flex;gap:8px;flex-wrap:wrap">
+                        <span class="badge ok">버튼 설계</span>
+                        <span class="badge warn">라우팅 문제 해결</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top:14px;display:flex;gap:10px;justify-content:flex-end">
+                <a class="btn" href="work.html">← 직무 목록</a>
+                <a class="btn brand" href="home.html">홈으로</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
